@@ -17,8 +17,8 @@
             <div class="row mt-5">
                 <div class="col-12">
                     <h1>Module 3 Skill Building No. 1 - Problem 1</h1>
-                    <button type="button" class="btn btn-success" onclick="startThings()">START</button>
                     <div id="output" class="mt-5"></div>
+                    <button type="button" class="btn btn-success" onclick="startThings()">START</button>
                 </div>
             </div>
         </div>
@@ -26,7 +26,32 @@
         <!-- Module 3 Skill Building Exercise 1 - Part 1 JavaScript -->
         <script>
             function startThings() {
-                let romanNumeral // do not modify
+                let romanNumeral = Number(prompt("Please enter a number from 1 to 10"))
+                if(romanNumeral > 10 || romanNumeral < 1) {
+                    romanNumeral = "<p class=\"error\">Please enter a number in the specified range.</p>"
+                    document.getElementById('output').style.backgroundImage = 'none'
+                    document.getElementById('output').style.border = 'none'
+                } else if (romanNumeral == 1) {
+                    romanNumeral = "<p class=\"numeral\">I</p>"
+                } else if (romanNumeral == 2) {
+                    romanNumeral = "<p class=\"numeral\">II</p>"
+                } else if (romanNumeral == 3) {
+                    romanNumeral = "<p class=\"numeral\">III</p>"
+                } else if (romanNumeral == 4) {
+                    romanNumeral = "<p class=\"numeral\">IV</p>"
+                } else if (romanNumeral == 5) {
+                    romanNumeral = "<p class=\"numeral\">V</p>"
+                } else if (romanNumeral == 6) {
+                    romanNumeral = "<p class=\"numeral\">VI</p>"
+                } else if (romanNumeral == 7) {
+                    romanNumeral = "<p class=\"numeral\">VII</p>"
+                } else if (romanNumeral == 8) {
+                    romanNumeral = "<p class=\"numeral\">VIII</p>"
+                } else if (romanNumeral == 9) {
+                    romanNumeral = "<p class=\"numeral\">IX</p>"
+                } else if (romanNumeral == 10) {
+                    romanNumeral = "<p class=\"numeral\">X</p>"
+                } 
                 // your code goes here
                 // be sure to assign the roman numeral to the variable romanNumeral
                 // it will be used to display it on the web page using the code below

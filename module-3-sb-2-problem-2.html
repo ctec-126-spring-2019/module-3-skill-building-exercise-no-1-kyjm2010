@@ -17,16 +17,52 @@
             <div class="row mt-5">
                 <div class="col-12">
                     <h1>Module 3 Skill Building No. 1 - Problem 2</h1>
-                    <button type="button" class="btn btn-success" onclick="startThings()">START</button>
                     <div id="output" class="mt-5"></div>
+                    <button type="button" class="btn btn-success" onclick="startThings()">START</button>
                 </div>
             </div>
         </div>
 
         <script>
             function startThings() {
-                let romanNumeral // do not modify
-                // your code goes here
+                let romanNumeral = Number(prompt("Please enter a number from 1 to 10"))
+                switch(romanNumeral) {
+                    case 1:
+                        romanNumeral = "<p class=\"numeral\">I</p>"
+                        break;
+                        case 2:
+                        romanNumeral = "<p class=\"numeral\">II</p>"
+                        break;
+                        case 3:
+                        romanNumeral = "<p class=\"numeral\">III</p>"
+                        break;
+                        case 4:
+                        romanNumeral = "<p class=\"numeral\">IV</p>"
+                        break;
+                        case 5:
+                        romanNumeral = "<p class=\"numeral\">V</p>"
+                        break;
+                        case 6:
+                        romanNumeral = "<p class=\"numeral\">VI</p>"
+                        break;
+                        case 7:
+                        romanNumeral = "<p class=\"numeral\">VII</p>"
+                        break;
+                        case 8:
+                        romanNumeral = "<p class=\"numeral\">VIII</p>"
+                        break;
+                        case 9:
+                        romanNumeral = "<p class=\"numeral\">IX</p>"
+                        break;
+                        case 10:
+                        romanNumeral = "<p class=\"numeral\">X</p>"
+                        break;
+                        default:
+                            romanNumeral = "<p class=\"error\">Please enter a number in the specified range.</p>"
+                            document.getElementById('output').style.backgroundImage = 'none'
+                            document.getElementById('output').style.border = 'none'
+                            break;
+                }
                 // be sure to assign the roman numeral to the variable romanNumeral
                 // it will be used to display it on the web page using the code below
 
